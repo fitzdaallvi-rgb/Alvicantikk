@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Markdown Files &#8212; My sample book</title>
+    <title>Tugas ELiminasi Gaussan &#8212; My sample book</title>
   
   
   
@@ -60,9 +60,13 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas Eliminasi Gaussan';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan alvi" href="Tugas%20Transformasi%20Linear%20Geometris.html" />
+    <link rel="prev" title="Tugas Awal" href="Tugas%20awal.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -113,8 +117,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -168,12 +170,12 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="materi-1.html">Materi 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="materi-2.html">Materi 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="materi-3.html">Materi 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas%20awal.html">Tugas Awal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tugas%20Eliminasi%20Gaussan.html">Tugas ELiminasi Gaussan</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas ELiminasi Gaussan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas%20Transformasi%20Linear%20Geometris.html">Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan alvi</a></li>
 </ul>
 
@@ -251,7 +253,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmarkdown.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTugas Eliminasi Gaussan.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -281,7 +283,7 @@
       
       
       
-      <li><a href="_sources/markdown.md" target="_blank"
+      <li><a href="_sources/Tugas Eliminasi Gaussan.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -357,7 +359,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Markdown Files</h1>
+    <h1>Tugas ELiminasi Gaussan</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -367,10 +369,17 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spl-sistem-persamaan-linear">1. SPL (Sistem Persamaan Linear)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-augmented">2. Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss-obe">3. Eliminasi Gauss (OBE)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-nolkan-elemen-di-bawah-pivot-kolom-1">Langkah 1: nolkan elemen di bawah pivot kolom 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-nolkan-elemen-di-bawah-pivot-kolom-2">Langkah 2: nolkan elemen di bawah pivot kolom 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-3-nolkan-elemen-di-bawah-pivot-kolom-3">Langkah 3: nolkan elemen di bawah pivot kolom 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-4-nolkan-elemen-di-bawah-pivot-kolom-4">Langkah 4: nolkan elemen di bawah pivot kolom 4</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sage-cell">SAGE CELL</a></li>
 </ul>
             </nav>
         </div>
@@ -382,59 +391,126 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="markdown-files">
-<h1>Markdown Files<a class="headerlink" href="#markdown-files" title="Link to this heading">#</a></h1>
-<p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
-in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
-called <strong>MyST Markdown</strong>.
-This is a simple file to help you get started and show off some syntax.</p>
-<section id="what-is-myst">
-<h2>What is MyST?<a class="headerlink" href="#what-is-myst" title="Link to this heading">#</a></h2>
-<p>MyST stands for “Markedly Structured Text”. It
-is a slight variation on a flavor of markdown called “CommonMark” markdown,
-with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
-in the Sphinx ecosystem.</p>
-<p>For more about MyST, see <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST Markdown Overview</a>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-eliminasi-gaussan">
+<h1>Tugas ELiminasi Gaussan<a class="headerlink" href="#tugas-eliminasi-gaussan" title="Link to this heading">#</a></h1>
+<section id="spl-sistem-persamaan-linear">
+<h2>1. SPL (Sistem Persamaan Linear)<a class="headerlink" href="#spl-sistem-persamaan-linear" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{cases}
+1x_1 + 0x_2 + 0x_3 + 0x_4 + 0x_5 = 1 \\
+2x_1 + 1x_2 + 0x_3 + 0x_4 + 0x_5 = 4 \\
+0x_1 + 3x_2 + 1x_3 + 0x_4 + 0x_5 = 9 \\
+0x_1 + 0x_2 + 4x_3 + 1x_4 + 0x_5 = 16 \\
+0x_1 + 0x_2 + 0x_3 + 5x_4 + 1x_5 = 25
+\end{cases}\end{split}\]</div>
 </section>
-<section id="sample-roles-and-directives">
-<h2>Sample Roles and Directives<a class="headerlink" href="#sample-roles-and-directives" title="Link to this heading">#</a></h2>
-<p>Roles and directives are two of the most powerful tools in Jupyter Book. They
-are like functions, but written in a markup language. They both
-serve a similar purpose, but <strong>roles are written in one line</strong>, whereas
-<strong>directives span many lines</strong>. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.</p>
-<p>Here is a “note” directive:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Here is a note</p>
-</div>
-<p>It will be rendered in a special box when you build your book.</p>
-<p>Here is an inline directive to refer to a document: <a class="reference internal" href="markdown-notebooks.html"><span class="doc">Notebooks with MyST Markdown</span></a>.</p>
+<section id="matriks-augmented">
+<h2>2. Matriks Augmented<a class="headerlink" href="#matriks-augmented" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[
+\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+2 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 4 \\
+1 &amp; 3 &amp; 1 &amp; 0 &amp; 0 &amp; 9 \\
+1 &amp; 0 &amp; 4 &amp; 1 &amp; 0 &amp; 16 \\
+1 &amp; 0 &amp; 0 &amp; 5 &amp; 1 &amp; 25
+\end{array}
+\right]\end{split}\]</div>
 </section>
-<section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
-<p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
-the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
-this: <span id="id1">[<a class="reference internal" href="#id3" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In International Conference on Cognitive Neuroscience. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.">HdHPK14</a>]</span>.</p>
-<p>Moreover, you can insert a bibliography into your page with this syntax:
-The <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> directive must be used for all the <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> roles to
-render properly.
-For example, if the references for your book are stored in <code class="docutils literal notranslate"><span class="pre">references.bib</span></code>,
-then the bibliography is inserted with:</p>
-<div class="docutils container" id="id2">
-<div role="list" class="citation-list">
-<div class="citation" id="id3" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">HdHPK14</a><span class="fn-bracket">]</span></span>
-<p>Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In <em>International Conference on Cognitive Neuroscience</em>. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.</p>
-</div>
-</div>
-</div>
+<section id="eliminasi-gauss-obe">
+<h2>3. Eliminasi Gauss (OBE)<a class="headerlink" href="#eliminasi-gauss-obe" title="Link to this heading">#</a></h2>
+<section id="langkah-1-nolkan-elemen-di-bawah-pivot-kolom-1">
+<h3>Langkah 1: nolkan elemen di bawah pivot kolom 1<a class="headerlink" href="#langkah-1-nolkan-elemen-di-bawah-pivot-kolom-1" title="Link to this heading">#</a></h3>
+<p>Operasi baris: $<span class="math notranslate nohighlight">\(R_2 \leftarrow R_2 - 2R_1\)</span>$</p>
+<p>Penjelasan:</p>
+<ol class="arabic simple">
+<li><p>Pivot pertama ada di kolom 1 baris 1 (angka 1).</p></li>
+<li><p>Di bawahnya (baris 2 kolom 1) ada angka 2.</p></li>
+<li><p>Kita ingin membuat elemen tersebut menjadi 0.</p></li>
+<li><p>Caranya dengan mengurangkan 2 kali baris 1 dari baris 2.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[
+\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 \\
+1 &amp; 3 &amp; 1 &amp; 0 &amp; 0 &amp; 9 \\
+1 &amp; 0 &amp; 4 &amp; 1 &amp; 0 &amp; 16 \\
+1 &amp; 0 &amp; 0 &amp; 5 &amp; 1 &amp; 25
+\end{array}
+\right]\end{split}\]</div>
 </section>
-<section id="learn-more">
-<h2>Learn more<a class="headerlink" href="#learn-more" title="Link to this heading">#</a></h2>
-<p>This is just a simple starter to get you started.
-You can learn a lot more at <a class="reference external" href="https://jupyterbook.org">jupyterbook.org</a>.</p>
+<section id="langkah-2-nolkan-elemen-di-bawah-pivot-kolom-2">
+<h3>Langkah 2: nolkan elemen di bawah pivot kolom 2<a class="headerlink" href="#langkah-2-nolkan-elemen-di-bawah-pivot-kolom-2" title="Link to this heading">#</a></h3>
+<p>Operasi baris: $<span class="math notranslate nohighlight">\(R_3 \leftarrow R_3 - 3R_2\)</span>$</p>
+<p>Penjelasan:</p>
+<ol class="arabic simple">
+<li><p>Pivot kedua ada di kolom 2 baris 2 (angka 1).</p></li>
+<li><p>Di bawahnya (baris 3 kolom 2) ada angka 3.</p></li>
+<li><p>Kita membuat elemen tersebut menjadi 0 dengan mengurangkan 3 kali
+baris 2.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[
+\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 \\
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 3 \\
+1 &amp; 0 &amp; 4 &amp; 1 &amp; 0 &amp; 16 \\
+1 &amp; 0 &amp; 0 &amp; 5 &amp; 1 &amp; 25
+\end{array}
+\right]\end{split}\]</div>
+</section>
+<section id="langkah-3-nolkan-elemen-di-bawah-pivot-kolom-3">
+<h3>Langkah 3: nolkan elemen di bawah pivot kolom 3<a class="headerlink" href="#langkah-3-nolkan-elemen-di-bawah-pivot-kolom-3" title="Link to this heading">#</a></h3>
+<p>Operasi baris: $<span class="math notranslate nohighlight">\(R_4 \leftarrow R_4 - 4R_3\)</span>$</p>
+<p>Penjelasan:</p>
+<ol class="arabic simple">
+<li><p>Pivot ketiga ada di kolom 3 baris 3 (angka 1).</p></li>
+<li><p>Di bawahnya (baris 4 kolom 3) ada angka 4.</p></li>
+<li><p>Elemen tersebut dinolkan dengan mengurangkan 4 kali baris 3.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[
+\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 \\
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 3 \\
+1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 4 \\
+1 &amp; 0 &amp; 0 &amp; 5 &amp; 1 &amp; 25
+\end{array}
+\right]\end{split}\]</div>
+</section>
+<section id="langkah-4-nolkan-elemen-di-bawah-pivot-kolom-4">
+<h3>Langkah 4: nolkan elemen di bawah pivot kolom 4<a class="headerlink" href="#langkah-4-nolkan-elemen-di-bawah-pivot-kolom-4" title="Link to this heading">#</a></h3>
+<p>Operasi baris: $<span class="math notranslate nohighlight">\(R_5 \leftarrow R_5 - 5R_4\)</span>$</p>
+<p>Penjelasan:</p>
+<ol class="arabic simple">
+<li><p>Pivot keempat ada di kolom 4 baris 4 (angka 1).</p></li>
+<li><p>Di bawahnya (baris 5 kolom 4) ada angka 5.</p></li>
+<li><p>Elemen tersebut dibuat nol dengan mengurangkan 5 kali baris 4.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}\left[
+    \begin{array}{ccccc|c}
+    1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+    0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 \\
+    1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 3 \\
+    1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 4 \\
+    1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 5
+    \end{array}
+    \right]$$\end{split}\]</div>
+</section>
+</section>
+<section id="hasil-akhir">
+<h2>Hasil Akhir<a class="headerlink" href="#hasil-akhir" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[x_1 = 1,\quad x_2 = 2,\quad x_3 = 3,\quad x_4 = 4,\quad x_5 = 5\]</div>
+</section>
+<section id="sage-cell">
+<h2>SAGE CELL<a class="headerlink" href="#sage-cell" title="Link to this heading">#</a></h2>
+<p><img alt="original image" src="https://cdn.mathpix.com/snip/images/aeU_3-oDook_mnKKIv2FYWNZY-_fwbTFVqVEcXw9jo4.original.fullsize.png" /></p>
+<p>Kesimpulan: Eliminasi Gauss adalah metode efisien untuk menyelesaikan sistem persamaan linear (SPL) dengan mengubah matriks diperbesar menjadi bentuk eselon baris (segitiga atas) menggunakan operasi baris elementer. Proses ini diakhiri dengan substitusi balik untuk mendapatkan solusi, menjadikannya metode sistematis yang ampuh.</p>
 </section>
 </section>
 
@@ -468,6 +544,24 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Tugas%20awal.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Tugas Awal</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Tugas%20Transformasi%20Linear%20Geometris.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan alvi</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -486,10 +580,17 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spl-sistem-persamaan-linear">1. SPL (Sistem Persamaan Linear)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-augmented">2. Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-gauss-obe">3. Eliminasi Gauss (OBE)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-nolkan-elemen-di-bawah-pivot-kolom-1">Langkah 1: nolkan elemen di bawah pivot kolom 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-nolkan-elemen-di-bawah-pivot-kolom-2">Langkah 2: nolkan elemen di bawah pivot kolom 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-3-nolkan-elemen-di-bawah-pivot-kolom-3">Langkah 3: nolkan elemen di bawah pivot kolom 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-4-nolkan-elemen-di-bawah-pivot-kolom-4">Langkah 4: nolkan elemen di bawah pivot kolom 4</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sage-cell">SAGE CELL</a></li>
 </ul>
   </nav></div>
 

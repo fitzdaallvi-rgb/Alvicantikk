@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Markdown Files &#8212; My sample book</title>
+    <title>Materi 1 &#8212; My sample book</title>
   
   
   
@@ -60,9 +60,13 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'markdown';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'materi-1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Materi 2" href="materi-2.html" />
+    <link rel="prev" title="250411100143 FAIZATUL ALVI WIDDA" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -113,8 +117,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -168,8 +170,8 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="materi-1.html">Materi 1</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Materi 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="materi-2.html">Materi 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="materi-3.html">Materi 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas%20awal.html">Tugas Awal</a></li>
@@ -251,7 +253,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmarkdown.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmateri-1.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -281,7 +283,7 @@
       
       
       
-      <li><a href="_sources/markdown.md" target="_blank"
+      <li><a href="_sources/materi-1.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -357,7 +359,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Markdown Files</h1>
+    <h1>Materi 1</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -367,10 +369,7 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linier">PERSAMAAN LINIER</a></li>
 </ul>
             </nav>
         </div>
@@ -382,59 +381,131 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="markdown-files">
-<h1>Markdown Files<a class="headerlink" href="#markdown-files" title="Link to this heading">#</a></h1>
-<p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
-in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
-called <strong>MyST Markdown</strong>.
-This is a simple file to help you get started and show off some syntax.</p>
-<section id="what-is-myst">
-<h2>What is MyST?<a class="headerlink" href="#what-is-myst" title="Link to this heading">#</a></h2>
-<p>MyST stands for “Markedly Structured Text”. It
-is a slight variation on a flavor of markdown called “CommonMark” markdown,
-with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
-in the Sphinx ecosystem.</p>
-<p>For more about MyST, see <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST Markdown Overview</a>.</p>
-</section>
-<section id="sample-roles-and-directives">
-<h2>Sample Roles and Directives<a class="headerlink" href="#sample-roles-and-directives" title="Link to this heading">#</a></h2>
-<p>Roles and directives are two of the most powerful tools in Jupyter Book. They
-are like functions, but written in a markup language. They both
-serve a similar purpose, but <strong>roles are written in one line</strong>, whereas
-<strong>directives span many lines</strong>. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.</p>
-<p>Here is a “note” directive:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Here is a note</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="materi-1">
+<h1>Materi 1<a class="headerlink" href="#materi-1" title="Link to this heading">#</a></h1>
+<section id="persamaan-linier">
+<h2>PERSAMAAN LINIER<a class="headerlink" href="#persamaan-linier" title="Link to this heading">#</a></h2>
+<p>Secara matematis, persamaan linear adalah sebuah persamaan yang memiliki derajat(pangkat) tertinggi satu. Jika sebuah persamaan memiliki variabel x atau y, maka variabel tersebut tidak boleh memiliki pangkat selain satu(misal:x^2,x^3, dst tidak diperbolehkan. Mengingat bahwa sebuah garis dua dimensi dalam sistem koordinat xy dapat direpresentasikan dengan bentuk persamaan:</p>
+<div class="math notranslate nohighlight">
+\[
+ax + by = c(a,b /ne 0)
+\]</div>
+<p>Dan sebuah bidang tiga dimensi dalam sistem koordinat xyz dapat direpresentasikan dengan bentuk persamaan:</p>
+<div class="math notranslate nohighlight">
+\[
+ax + by + cz = d (a,b,c /ne 0)
+\]</div>
+<p>Bentuk-bentuk di atas adalah contoh-contoh dari persamaan linear, dimana yang pertama dalam variabel x dan y sedangkan yang kedua dalam variabel x, y dan z. Secara umum, sebuah persamaan linear dalam n variabel x_1,x_2,…,x_n dapat direpresentasikan dalam bentuk:</p>
+<div class="math notranslate nohighlight">
+\[
+a_1x_1 + a_2 x_2 + ... a_n x_n = b
+\]</div>
+<p>Dimana a_1, a_2, …, a_n dan b adalah konstanta dan semua a tidak nol. Dalam kasus khusus dimana n=2 atau n=3, akan sering digunakan variabel tanpa subscript dan persamaan linear dalam bentuk:</p>
+<div class="math notranslate nohighlight">
+\[
+a_1 x + a_2 y = b (a_1, a-2 /ne 0)
+a_1 x + a_2 y + a_3 z = b (a_1, a_2, a_3 /ne 0)
+\]</div>
+<p>Dalam kasus khusus dimana b=0, persamaan bentuk (1) menjadi:</p>
+<div class="math notranslate nohighlight">
+\[
+a_1 x_1 + a_2 x_2 + ..., a_n, x_n = 0
+\]</div>
+<p>Disebut persamaan liniar homogen dalam variabel x_1, x_2, …, x_n.</p>
+<p>Contoh 1: Persamaan Linear
+Perhatikan bahwa suatu persamaan linier tidak melibatkan variabel berupa hasil kali atau bentuk akar. Semua variabel hanya berpangkat satu dan tidak dituliskan. Berikut ini adalah contoh persamaan linear:</p>
+<div class="math notranslate nohighlight">
+\[
+x + 3y = 7
+\frac{1}{2}x - y + 3z = -1
+x_1 - 2x_2 - 3x_3 + x_4 = 0
+x_1 + x_2 +...+ x_n = 1
+\]</div>
+<p>Berikut ini adalah contoh bukan persamaan linier:</p>
+<div class="math notranslate nohighlight">
+\[
+x + 3y_2 = 4
+3x + 2y - xy = 5
+sin x + y = 0
+\sqrt{x_1} + 2x_2 + x_3 = 1
+\]</div>
+<p>Himpunan terbatas dari persamaan linier disebut sistem persamaan  disebut sistem persamaan linier atau sistem linier. Variabelnya disebut tak diketahui. sebagai contoh, sistem (5) berikut ini memiliki x dan y yang tak diketahui dan sistem (6) memiliki x_1, x_2, dan x_3 yang tak diketahui.</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}
+\begin{cases}
+5x + y = 3 \\
+2x - y = 4
+\end{cases}\end{split}\\\begin{split}\begin{cases}
+4x_1 - x_2 + 3x_3 = -1 \\
+3x_1 + x_2 + 9x_3 = -4
+\end{cases}
+\end{split}\end{aligned}\end{align} \]</div>
+<p>Secara umum, sistem linier dari m persamaan dengan variabel n tak diketahui dapat ditulis sebagai:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left.
+\begin{aligned}
+a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n &amp;= b_1 \\
+a_{21}x_1 + a_{22}x_2 + \dots + a_{2n}x_n &amp;= b_2 \\
+\vdots \\
+a_{m1}x_1 + a_{m2}x_2 + \dots + a_{mn}x_n &amp;= b_m
+\end{aligned}
+\right\}
+\end{split}\]</div>
+<p>Solusi dari sistem linier dalam n variabel tak diketahui x_1, x_2,…, x_n adalh barisan dari n bilangan s_1, s_2, …, x_n dimana substitusinya adalah:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 = s_1, x_2 = s_2, ..., x_n = s_n
+\]</div>
+<p>Yang membuat masing-masing persamaan menjadi pernyataan yang benar. Sebagai contoh, sistem (5) memiliki solusi:</p>
+<div class="math notranslate nohighlight">
+\[
+x = 1, y = -2
+\]</div>
+<p>Dan sistem (6) memiliki solusi:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 = 1, x_2 = 2, x_3 = -1
+\]</div>
+<p>Dimana nama-nama variabel diabaikan. Notasi ini, membolehkan kita menginterpretasikan solusi secara geometri sebagai titik-titik dalam ruang 2 dimensi dan 3 dimensi. Secara umum, solusinya adalah:</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 = s_1, x_2 = s_2,..., x_n = s_n
+\]</div>
+<p>Dari sistem linier dengan n variabel tak diketahui dapat ditulis sebgai;</p>
+<div class="math notranslate nohighlight">
+\[
+(s_1, s_2,.., s_n)
+\]</div>
+<p>Yang disebut sebgai pasangan ganda (kembar) n berurutan. Dengan notasi ini dapat dipahami bahwa semua variabel muncul dalam ururtan yang sama dalam setiap persamaan. Jika n = 2 maka pasangan ganda (kembar) n berurutan disebut pasangan berurutan dan jika n = 3 disebut pasangan ganda (kembar) 3 berurutan.</p>
+<p>Bentuk standar persamaan linear dengan n variabel adalah:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>      a_1 x_1 + a_2 x_2 + ... + a_n x_n = b
+</pre></div>
 </div>
-<p>It will be rendered in a special box when you build your book.</p>
-<p>Here is an inline directive to refer to a document: <a class="reference internal" href="markdown-notebooks.html"><span class="doc">Notebooks with MyST Markdown</span></a>.</p>
-</section>
-<section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
-<p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
-the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
-this: <span id="id1">[<a class="reference internal" href="#id3" title="Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In International Conference on Cognitive Neuroscience. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.">HdHPK14</a>]</span>.</p>
-<p>Moreover, you can insert a bibliography into your page with this syntax:
-The <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> directive must be used for all the <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> roles to
-render properly.
-For example, if the references for your book are stored in <code class="docutils literal notranslate"><span class="pre">references.bib</span></code>,
-then the bibliography is inserted with:</p>
-<div class="docutils container" id="id2">
-<div role="list" class="citation-list">
-<div class="citation" id="id3" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">HdHPK14</a><span class="fn-bracket">]</span></span>
-<p>Christopher Ramsay Holdgraf, Wendy de Heer, Brian N. Pasley, and Robert T. Knight. Evidence for Predictive Coding in Human Auditory Cortex. In <em>International Conference on Cognitive Neuroscience</em>. Brisbane, Australia, Australia, 2014. Frontiers in Neuroscience.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="learn-more">
-<h2>Learn more<a class="headerlink" href="#learn-more" title="Link to this heading">#</a></h2>
-<p>This is just a simple starter to get you started.
-You can learn a lot more at <a class="reference external" href="https://jupyterbook.org">jupyterbook.org</a>.</p>
+<p>Dimana:</p>
+<ul class="simple">
+<li><p>a_1,a_2,…: adalah koefisien(angka pendamping variabel)</p></li>
+<li><p>x_1,x_2,…: adalah variabel(nilai yang belum diketahui)</p></li>
+<li><p>b: adalah kostanta</p></li>
+</ul>
+<p>Dalam ruang dua dimensi(2D) setiap pasangan nilai(x,y) yang memenuhi persamaan tersebut, jika dihubungkan akan membentuk garis lurus(line) yang tidak terputus dan tidak berbelok. Secara geometris, persamaan linear merepresentasikan perubahan yang konstan. Jika nilai x bertambah, maka nilai y akan bertambah(atau berkurang) dengan rasio yang tetap. itulah yang disebut gradien atau kemiringan garis.</p>
+<p>Persamaan linear memiliki sifat-sifat unik yang membedakannya dari persamaan non-linear(seperti kuadrat atau eksponensial):</p>
+<ol class="arabic simple">
+<li><p>Sifat penjumlahan: kita bisa menambahkan atau mengurangi kedua ruas dengan angka yang sama tanpa mengubah nilai kebenaran persamaan.</p></li>
+<li><p>Sifat perkalian: Kita bisa mengali atau membagi kedua ruas dengan angka yang sama(selama bukan nol).</p></li>
+<li><p>Visualisasi: Didalam koordinat kartesius, ia tidak akan pernah memiliki titik puncak atau lembah(parabola), melainkan membentang lurus hingga tak terhingga.</p></li>
+</ol>
+<p>Contoh dua persamaan linier dengan dua variabel</p>
+<div class="math notranslate nohighlight">
+\[f:3x + 4y = 24\]</div>
+<div class="math notranslate nohighlight">
+\[g:5x - 2y = 14\]</div>
+<p><img alt="Persamaan Linear" src="grafik/persamaan_linear_1.png" /></p>
+<div class="math notranslate nohighlight">
+\[f:3x + 2y = 10\]</div>
+<div class="math notranslate nohighlight">
+\[g:2x + 5y = 14\]</div>
+<p><img alt="Persamaan Linear" src="grafik/persamaan_linear_2.png" /></p>
 </section>
 </section>
 
@@ -468,6 +539,24 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">250411100143 FAIZATUL ALVI WIDDA</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="materi-2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Materi 2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -486,10 +575,7 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn more</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linier">PERSAMAAN LINIER</a></li>
 </ul>
   </nav></div>
 
