@@ -1,4 +1,4 @@
-# Tugas Eigen Value dan Eigen Vektor dengan Dekomposisi
+# Tugas Eigen Value dan Eigen Vektor
 
 ## Link Colab:
 https://colab.research.google.com/drive/1yqguK8LLd_RI2jY1VJhMVmLloSH42xRV?usp=sharing
