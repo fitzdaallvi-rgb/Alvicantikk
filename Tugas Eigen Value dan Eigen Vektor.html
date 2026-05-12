@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Materi 1 &#8212; My sample book</title>
+    <title>Tugas Eigen Value dan Eigen Vektor dengan Dekomposisi &#8212; My sample book</title>
   
   
   
@@ -62,11 +62,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'materi-1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Tugas Eigen Value dan Eigen Vektor';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Materi 2" href="materi-2.html" />
-    <link rel="prev" title="250411100143 FAIZATUL ALVI WIDDA" href="intro.html" />
+    <link rel="prev" title="Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan alvi" href="Tugas%20Transformasi%20Linear%20Geometris.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -171,13 +170,13 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Materi 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materi-1.html">Materi 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="materi-2.html">Materi 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="materi-3.html">Materi 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas%20awal.html">Tugas Awal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas%20Eliminasi%20Gaussan.html">Tugas ELiminasi Gaussan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas%20Transformasi%20Linear%20Geometris.html">Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan alvi</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tugas%20Eigen%20Value%20dan%20Eigen%20Vektor.html">Tugas Eigen Value dan Eigen Vektor dengan Dekomposisi</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas Eigen Value dan Eigen Vektor dengan Dekomposisi</a></li>
 </ul>
 
     </div>
@@ -254,7 +253,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmateri-1.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTugas Eigen Value dan Eigen Vektor.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -284,7 +283,7 @@
       
       
       
-      <li><a href="_sources/materi-1.md" target="_blank"
+      <li><a href="_sources/Tugas Eigen Value dan Eigen Vektor.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -360,7 +359,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Materi 1</h1>
+    <h1>Tugas Eigen Value dan Eigen Vektor dengan Dekomposisi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -370,7 +369,17 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linier">PERSAMAAN LINIER</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#link-colab">Link Colab:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-1-menentukan-matriks-awal">Tahap 1 - Menentukan Matriks Awal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-2-membentuk-vektor-q1">Tahap 2 - Membentuk Vektor q1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-3-menghitung-proyeksi-a2">Tahap 3 - Menghitung Proyeksi a2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-4-membentuk-vektor-ortoganal-u2">Tahap 4 - Membentuk Vektor Ortoganal u2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-5-membentuk-vektor-q2">Tahap 5 - Membentuk Vektor q2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-6-membentuk-matriks-q-dan-r">Tahap 6 - Membentuk Matriks Q dan R</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-7-verifikasi-dekomposisi-qr">Tahap 7 - Verifikasi Dekomposisi QR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-8-membentuk-matriks-iterasi-baru">Tahap 8 - Membentuk Matriks Iterasi Baru</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-9-iterasi-qr-hingga-10-kali">Tahap 9 - Iterasi QR hingga 10 kali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-10-kesimpulan-nilai-eigen">Tahap 10 - Kesimpulan Nilai Eigen</a></li>
 </ul>
             </nav>
         </div>
@@ -382,131 +391,136 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="materi-1">
-<h1>Materi 1<a class="headerlink" href="#materi-1" title="Link to this heading">#</a></h1>
-<section id="persamaan-linier">
-<h2>PERSAMAAN LINIER<a class="headerlink" href="#persamaan-linier" title="Link to this heading">#</a></h2>
-<p>Secara matematis, persamaan linear adalah sebuah persamaan yang memiliki derajat(pangkat) tertinggi satu. Jika sebuah persamaan memiliki variabel x atau y, maka variabel tersebut tidak boleh memiliki pangkat selain satu(misal:x^2,x^3, dst tidak diperbolehkan. Mengingat bahwa sebuah garis dua dimensi dalam sistem koordinat xy dapat direpresentasikan dengan bentuk persamaan:</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-eigen-value-dan-eigen-vektor-dengan-dekomposisi">
+<h1>Tugas Eigen Value dan Eigen Vektor dengan Dekomposisi<a class="headerlink" href="#tugas-eigen-value-dan-eigen-vektor-dengan-dekomposisi" title="Link to this heading">#</a></h1>
+<section id="link-colab">
+<h2>Link Colab:<a class="headerlink" href="#link-colab" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://colab.research.google.com/drive/1yqguK8LLd_RI2jY1VJhMVmLloSH42xRV?usp=sharing">https://colab.research.google.com/drive/1yqguK8LLd_RI2jY1VJhMVmLloSH42xRV?usp=sharing</a></p>
+</section>
+<section id="tahap-1-menentukan-matriks-awal">
+<h2>Tahap 1 - Menentukan Matriks Awal<a class="headerlink" href="#tahap-1-menentukan-matriks-awal" title="Link to this heading">#</a></h2>
+<p>Langkah pertama adalah menentukan Matriks 2 x 2:</p>
 <div class="math notranslate nohighlight">
-\[
-ax + by = c(a,b /ne 0)
-\]</div>
-<p>Dan sebuah bidang tiga dimensi dalam sistem koordinat xyz dapat direpresentasikan dengan bentuk persamaan:</p>
+\[\begin{split}A = \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}\end{split}\]</div>
+<p>Kemudian matriksnya dipecah menjadi dua vektor kolom yaitu</p>
 <div class="math notranslate nohighlight">
-\[
-ax + by + cz = d (a,b,c /ne 0)
-\]</div>
-<p>Bentuk-bentuk di atas adalah contoh-contoh dari persamaan linear, dimana yang pertama dalam variabel x dan y sedangkan yang kedua dalam variabel x, y dan z. Secara umum, sebuah persamaan linear dalam n variabel x_1,x_2,…,x_n dapat direpresentasikan dalam bentuk:</p>
+\[a_{1} [2, 1] \text{ dan } a_{2} [1, 2]\]</div>
+</section>
+<section id="tahap-2-membentuk-vektor-q1">
+<h2>Tahap 2 - Membentuk Vektor q1<a class="headerlink" href="#tahap-2-membentuk-vektor-q1" title="Link to this heading">#</a></h2>
+<p>Langkah kedua adalah mencari panjang dari  vektor a_1 = [2, 1] menggunakan rumus Pythagoras:</p>
 <div class="math notranslate nohighlight">
-\[
-a_1x_1 + a_2 x_2 + ... a_n x_n = b
-\]</div>
-<p>Dimana a_1, a_2, …, a_n dan b adalah konstanta dan semua a tidak nol. Dalam kasus khusus dimana n=2 atau n=3, akan sering digunakan variabel tanpa subscript dan persamaan linear dalam bentuk:</p>
+\[\|a_1\| = \sqrt{x^2 + y^2}\]</div>
 <div class="math notranslate nohighlight">
-\[
-a_1 x + a_2 y = b (a_1, a-2 /ne 0)
-a_1 x + a_2 y + a_3 z = b (a_1, a_2, a_3 /ne 0)
-\]</div>
-<p>Dalam kasus khusus dimana b=0, persamaan bentuk (1) menjadi:</p>
+\[\|a_1\| = \sqrt{2^2 + 1^2} = \sqrt{5} \approx 2.23606797749979\]</div>
+<p>Setelah tahu panjangnya maka kita harus ubah vektor a_1 agar tetap menunjukkan arah yang sama, lalu panjangnya jadi 1. Caranya dengan membagi setiap komponen vektor a_1 dengan nilai normanya:</p>
 <div class="math notranslate nohighlight">
-\[
-a_1 x_1 + a_2 x_2 + ..., a_n, x_n = 0
-\]</div>
-<p>Disebut persamaan liniar homogen dalam variabel x_1, x_2, …, x_n.</p>
-<p>Contoh 1: Persamaan Linear
-Perhatikan bahwa suatu persamaan linier tidak melibatkan variabel berupa hasil kali atau bentuk akar. Semua variabel hanya berpangkat satu dan tidak dituliskan. Berikut ini adalah contoh persamaan linear:</p>
+\[q_1 = \frac{a_1}{\|a_1\|}\]</div>
+<p>Maka didapatkan vektor q1:</p>
+<p><span class="math notranslate nohighlight">\(q_1 = [0.89442719, 0.4472136]\)</span></p>
+</section>
+<section id="tahap-3-menghitung-proyeksi-a2">
+<h2>Tahap 3 - Menghitung Proyeksi a2<a class="headerlink" href="#tahap-3-menghitung-proyeksi-a2" title="Link to this heading">#</a></h2>
+<p>Setelah tau panjang bayangannya, ubala angkanya menjadi sebuah vektor.</p>
+<p>Rumusnya:</p>
 <div class="math notranslate nohighlight">
-\[
-x + 3y = 7
-\frac{1}{2}x - y + 3z = -1
-x_1 - 2x_2 - 3x_3 + x_4 = 0
-x_1 + x_2 +...+ x_n = 1
-\]</div>
-<p>Berikut ini adalah contoh bukan persamaan linier:</p>
+\[\text{Proyeksi } a_2 \text{ pada } q_1 = (q_1 \cdot a_2) \times q_1\]</div>
+<p>Jadinya:</p>
 <div class="math notranslate nohighlight">
-\[
-x + 3y_2 = 4
-3x + 2y - xy = 5
-sin x + y = 0
-\sqrt{x_1} + 2x_2 + x_3 = 1
-\]</div>
-<p>Himpunan terbatas dari persamaan linier disebut sistem persamaan  disebut sistem persamaan linier atau sistem linier. Variabelnya disebut tak diketahui. sebagai contoh, sistem (5) berikut ini memiliki x dan y yang tak diketahui dan sistem (6) memiliki x_1, x_2, dan x_3 yang tak diketahui.</p>
+\[q_1 \cdot a_2 = 1.7888543819998317\]</div>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\begin{split}
-\begin{cases}
-5x + y = 3 \\
-2x - y = 4
-\end{cases}\end{split}\\\begin{split}\begin{cases}
-4x_1 - x_2 + 3x_3 = -1 \\
-3x_1 + x_2 + 9x_3 = -4
-\end{cases}
-\end{split}\end{aligned}\end{align} \]</div>
-<p>Secara umum, sistem linier dari m persamaan dengan variabel n tak diketahui dapat ditulis sebagai:</p>
+\[\text{proj}_{q_1} a_2 = \begin{bmatrix} 1.6 &amp; 0.8 \end{bmatrix}\]</div>
+</section>
+<section id="tahap-4-membentuk-vektor-ortoganal-u2">
+<h2>Tahap 4 - Membentuk Vektor Ortoganal u2<a class="headerlink" href="#tahap-4-membentuk-vektor-ortoganal-u2" title="Link to this heading">#</a></h2>
+<p>Vektor asli <span class="math notranslate nohighlight">\(a_2\)</span>: <span class="math notranslate nohighlight">\([1, 2]\)</span></p>
+<p>Vektor Proyeksi  (proj): <span class="math notranslate nohighlight">\([1.6, 0.8]\)</span></p>
+<p>Perhitungannya:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\left.
-\begin{aligned}
-a_{11}x_1 + a_{12}x_2 + \dots + a_{1n}x_n &amp;= b_1 \\
-a_{21}x_1 + a_{22}x_2 + \dots + a_{2n}x_n &amp;= b_2 \\
-\vdots \\
-a_{m1}x_1 + a_{m2}x_2 + \dots + a_{mn}x_n &amp;= b_m
-\end{aligned}
-\right\}
-\end{split}\]</div>
-<p>Solusi dari sistem linier dalam n variabel tak diketahui x_1, x_2,…, x_n adalh barisan dari n bilangan s_1, s_2, …, x_n dimana substitusinya adalah:</p>
+\[\begin{split}u_2 = \begin{bmatrix} 1 \\ 2 \end{bmatrix} - \begin{bmatrix} 1.6 \\ 0.8 \end{bmatrix} = \begin{bmatrix} 1 - 1.6 \\ 2 - 0.8 \end{bmatrix} = \begin{bmatrix} -0.6 \\ 1.2 \end{bmatrix}\end{split}\]</div>
+</section>
+<section id="tahap-5-membentuk-vektor-q2">
+<h2>Tahap 5 - Membentuk Vektor q2<a class="headerlink" href="#tahap-5-membentuk-vektor-q2" title="Link to this heading">#</a></h2>
+<p>Setelah mendapatkan vektor <span class="math notranslate nohighlight">\(u_2 = [-0.6, 1.2]\)</span>, maka cari panjangnya(norma).</p>
+<p>Rumus:</p>
 <div class="math notranslate nohighlight">
-\[
-x_1 = s_1, x_2 = s_2, ..., x_n = s_n
-\]</div>
-<p>Yang membuat masing-masing persamaan menjadi pernyataan yang benar. Sebagai contoh, sistem (5) memiliki solusi:</p>
+\[\|u_2\| = \sqrt{(-0.6)^2 + (1.2)^2}\]</div>
+<p>jadinya:</p>
 <div class="math notranslate nohighlight">
-\[
-x = 1, y = -2
-\]</div>
-<p>Dan sistem (6) memiliki solusi:</p>
+\[\|u\|_2 = 1.3416407864998738\]</div>
+<p>Setelah itu bai setiap komponen vektor u2 dengan panjangnya sehingga panjngnya 1.</p>
+<p>Rumus:</p>
 <div class="math notranslate nohighlight">
-\[
-x_1 = 1, x_2 = 2, x_3 = -1
-\]</div>
-<p>Dimana nama-nama variabel diabaikan. Notasi ini, membolehkan kita menginterpretasikan solusi secara geometri sebagai titik-titik dalam ruang 2 dimensi dan 3 dimensi. Secara umum, solusinya adalah:</p>
+\[q_2 = \frac{u_2}{\|u_2\|}\]</div>
+<p>jadinya:</p>
 <div class="math notranslate nohighlight">
-\[
-x_1 = s_1, x_2 = s_2,..., x_n = s_n
-\]</div>
-<p>Dari sistem linier dengan n variabel tak diketahui dapat ditulis sebgai;</p>
+\[\mathbf{q_2} = \begin{bmatrix} -0.4472136 &amp; 0.89442719 \end{bmatrix}\]</div>
+</section>
+<section id="tahap-6-membentuk-matriks-q-dan-r">
+<h2>Tahap 6 - Membentuk Matriks Q dan R<a class="headerlink" href="#tahap-6-membentuk-matriks-q-dan-r" title="Link to this heading">#</a></h2>
+<p>Matriks A menjadi dua matriks:</p>
 <div class="math notranslate nohighlight">
-\[
-(s_1, s_2,.., s_n)
-\]</div>
-<p>Yang disebut sebgai pasangan ganda (kembar) n berurutan. Dengan notasi ini dapat dipahami bahwa semua variabel muncul dalam ururtan yang sama dalam setiap persamaan. Jika n = 2 maka pasangan ganda (kembar) n berurutan disebut pasangan berurutan dan jika n = 3 disebut pasangan ganda (kembar) 3 berurutan.</p>
-<p>Bentuk standar persamaan linear dengan n variabel adalah:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>      a_1 x_1 + a_2 x_2 + ... + a_n x_n = b
-</pre></div>
-</div>
-<p>Dimana:</p>
-<ul class="simple">
-<li><p>a_1,a_2,…: adalah koefisien(angka pendamping variabel)</p></li>
-<li><p>x_1,x_2,…: adalah variabel(nilai yang belum diketahui)</p></li>
-<li><p>b: adalah kostanta</p></li>
-</ul>
-<p>Dalam ruang dua dimensi(2D) setiap pasangan nilai(x,y) yang memenuhi persamaan tersebut, jika dihubungkan akan membentuk garis lurus(line) yang tidak terputus dan tidak berbelok. Secara geometris, persamaan linear merepresentasikan perubahan yang konstan. Jika nilai x bertambah, maka nilai y akan bertambah(atau berkurang) dengan rasio yang tetap. itulah yang disebut gradien atau kemiringan garis.</p>
-<p>Persamaan linear memiliki sifat-sifat unik yang membedakannya dari persamaan non-linear(seperti kuadrat atau eksponensial):</p>
-<ol class="arabic simple">
-<li><p>Sifat penjumlahan: kita bisa menambahkan atau mengurangi kedua ruas dengan angka yang sama tanpa mengubah nilai kebenaran persamaan.</p></li>
-<li><p>Sifat perkalian: Kita bisa mengali atau membagi kedua ruas dengan angka yang sama(selama bukan nol).</p></li>
-<li><p>Visualisasi: Didalam koordinat kartesius, ia tidak akan pernah memiliki titik puncak atau lembah(parabola), melainkan membentang lurus hingga tak terhingga.</p></li>
-</ol>
-<p>Contoh dua persamaan linier dengan dua variabel</p>
+\[\begin{split}\mathbf{Q} = \begin{bmatrix} 0.89442719 &amp; -0.4472136 \\ 0.4472136 &amp; 0.89442719 \end{bmatrix}\end{split}\]</div>
 <div class="math notranslate nohighlight">
-\[f:3x + 4y = 24\]</div>
+\[\begin{split}\mathbf{R} = \begin{bmatrix} 2.23606798 &amp; 1.78885438 \\ 3.33066907 \times 10^{-16} &amp; 1.34164079 \end{bmatrix}\end{split}\]</div>
+</section>
+<section id="tahap-7-verifikasi-dekomposisi-qr">
+<h2>Tahap 7 - Verifikasi Dekomposisi QR<a class="headerlink" href="#tahap-7-verifikasi-dekomposisi-qr" title="Link to this heading">#</a></h2>
+<p>Hasil dari Q x R adalah:</p>
 <div class="math notranslate nohighlight">
-\[g:5x - 2y = 14\]</div>
-<p><img alt="Persamaan Linear" src="grafik/persamaan_linear_1.png" /></p>
+\[\begin{split}\begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}\end{split}\]</div>
+</section>
+<section id="tahap-8-membentuk-matriks-iterasi-baru">
+<h2>Tahap 8 - Membentuk Matriks Iterasi Baru<a class="headerlink" href="#tahap-8-membentuk-matriks-iterasi-baru" title="Link to this heading">#</a></h2>
+<p>Mengalikan R setelah itu Q:</p>
 <div class="math notranslate nohighlight">
-\[f:3x + 2y = 10\]</div>
+\[\begin{split}\mathbf{A_1} = \mathbf{RQ} = \begin{bmatrix} 2.8 &amp; 0.6 \\ 0.6 &amp; 1.2 \end{bmatrix}\end{split}\]</div>
+</section>
+<section id="tahap-9-iterasi-qr-hingga-10-kali">
+<h2>Tahap 9 - Iterasi QR hingga 10 kali<a class="headerlink" href="#tahap-9-iterasi-qr-hingga-10-kali" title="Link to this heading">#</a></h2>
+<p>Proses Konvergensi Eigenvalue menggunakan Aloritma QR</p>
+<p>Iterasi 2
+[[2.9756 0.2195]
+[0.2195 1.0244]]</p>
+<p>Iterasi 3
+[[2.9973 0.074 ]
+[0.074  1.0027]]</p>
+<p>Iterasi 4
+[[2.9997 0.0247]
+[0.0247 1.0003]]</p>
+<p>Iterasi 5
+[[3.     0.0082]
+[0.0082 1.    ]]</p>
+<p>Iterasi 6
+[[3.0e+00 2.7e-03]
+[2.7e-03 1.0e+00]]</p>
+<p>Iterasi 7
+[[3.e+00 9.e-04]
+[9.e-04 1.e+00]]</p>
+<p>Iterasi 8
+[[3.e+00 3.e-04]
+[3.e-04 1.e+00]]</p>
+<p>Iterasi 9
+[[3.e+00 1.e-04]
+[1.e-04 1.e+00]]</p>
+<p>Iterasi 10
+[[3. 0.]
+[0. 1.]]</p>
+</section>
+<section id="tahap-10-kesimpulan-nilai-eigen">
+<h2>Tahap 10 - Kesimpulan Nilai Eigen<a class="headerlink" href="#tahap-10-kesimpulan-nilai-eigen" title="Link to this heading">#</a></h2>
+<p>Setelah dilakukan 10 x iterasi, maka matriks akhirnya :</p>
 <div class="math notranslate nohighlight">
-\[g:2x + 5y = 14\]</div>
-<p><img alt="Persamaan Linear" src="grafik/persamaan_linear_2.png" /></p>
+\[\begin{split}\begin{bmatrix}
+3 &amp; 0 \\
+0 &amp; 1
+\end{bmatrix}\end{split}\]</div>
+<p>Nilai Eigen:</p>
+<p>lambda_1 = 3.0</p>
+<p>lambda_2 = 1.0</p>
+<p>Kesimpulan:</p>
+<p>Metode QR berhasil menemukan nilai eigen
+dari matriks A melalui proses iterasi.</p>
 </section>
 </section>
 
@@ -541,22 +555,13 @@ x_1 = s_1, x_2 = s_2,..., x_n = s_n
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="Tugas%20Transformasi%20Linear%20Geometris.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">250411100143 FAIZATUL ALVI WIDDA</p>
+        <p class="prev-next-title">Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan alvi</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="materi-2.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Materi 2</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -576,7 +581,17 @@ x_1 = s_1, x_2 = s_2,..., x_n = s_n
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#persamaan-linier">PERSAMAAN LINIER</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#link-colab">Link Colab:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-1-menentukan-matriks-awal">Tahap 1 - Menentukan Matriks Awal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-2-membentuk-vektor-q1">Tahap 2 - Membentuk Vektor q1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-3-menghitung-proyeksi-a2">Tahap 3 - Menghitung Proyeksi a2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-4-membentuk-vektor-ortoganal-u2">Tahap 4 - Membentuk Vektor Ortoganal u2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-5-membentuk-vektor-q2">Tahap 5 - Membentuk Vektor q2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-6-membentuk-matriks-q-dan-r">Tahap 6 - Membentuk Matriks Q dan R</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-7-verifikasi-dekomposisi-qr">Tahap 7 - Verifikasi Dekomposisi QR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-8-membentuk-matriks-iterasi-baru">Tahap 8 - Membentuk Matriks Iterasi Baru</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-9-iterasi-qr-hingga-10-kali">Tahap 9 - Iterasi QR hingga 10 kali</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tahap-10-kesimpulan-nilai-eigen">Tahap 10 - Kesimpulan Nilai Eigen</a></li>
 </ul>
   </nav></div>
 
