@@ -48,6 +48,6 @@ Grafik  ini dinamakan Scree Plot yang berfungsi sebagai alat bukti ilmiah untuk 
 Berdasarkan output saya sumbu X menunjukkan indeks nilai singular dari 0 sampai 678 dan sumbu Y adalah nilai energinya:
 1. Pada titik awal (Indeks 0) grafik melonjak menembus angka di atas 90.000. Yang menjadi bukti bahwa informasi struktur utama pembentuk gambar semuanya berpusat di beberapa komponen awal saja.
 
-2. Setelah itu grafiknya langsung turun ke angka 5.000, lalu mendatar secara konstan mendekati angka 0 mulai dari indeks 60 hingga akhir grafik di angka 678.
+2. Setelah itu grafiknya langsung turun ke angka 5.000, lalu mendatar secara konstan mendekati angka 0 mulai dari indeks 60 hingga akhir grafik di angka 678. 
 
 Garis mendatar panjang membuktikan bahwa ratusan data dari indeks 60 sampai ke belakang nilainya tidak signifikan dan hanya berupa detail mikro atau noise kamera yang tidak terlalu penting. Jadi keputusan saya memilih nilai kompresi murni di rentang siku grafik seperti (k = 60) terbukti sukses memotong data kosong demi menghemat ruang penyimpanan.  
