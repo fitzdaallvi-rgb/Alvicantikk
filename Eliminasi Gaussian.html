@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>250411100143 FAIZATUL ALVI WIDDA &#8212; My sample book</title>
+    <title>Eliminasi Gaussian &#8212; My sample book</title>
   
   
   
@@ -60,12 +60,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Eliminasi Gaussian';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="PERSAMAAN LINEAR" href="Persamaan%20Linear.html" />
+    <link rel="next" title="Tugas Awal" href="Tugas%20Awal.html" />
+    <link rel="prev" title="SISTEM PERSAMAAN LINEAR" href="Sistem%20Persamaan%20Linear.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -117,8 +116,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -138,7 +135,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -165,16 +162,16 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     250411100143 FAIZATUL ALVI WIDDA
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Persamaan%20Linear.html">PERSAMAAN LINEAR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Sistem%20Persamaan%20Linear.html">SISTEM PERSAMAAN LINEAR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Eliminasi%20Gaussian.html">Eliminasi Gaussian</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Eliminasi Gaussian</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas%20Awal.html">Tugas Awal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas%20Eliminasi%20Gaussan.html">Tugas ELiminasi Gaussan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tugas%20Transformasi%20Linear%20Geometris.html">Tugas Transformasi sumbu Y menggunakan Translasi dan pencerminan alvi</a></li>
@@ -256,7 +253,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FEliminasi Gaussian.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -286,7 +283,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/Eliminasi Gaussian.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -349,7 +346,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -360,11 +359,20 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>250411100143 FAIZATUL ALVI WIDDA</h1>
+    <h1>Eliminasi Gaussian</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eliminasi-gaussian">Definisi Eliminasi Gaussian</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-baris-elementer-obe">Operasi Baris Elementer (OBE)</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -374,11 +382,28 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="faizatul-alvi-widda">
-<h1>250411100143 FAIZATUL ALVI WIDDA<a class="headerlink" href="#faizatul-alvi-widda" title="Link to this heading">#</a></h1>
-<p>Hai! Saya Faizatul Alvi Widda, mahasiswi Teknik Informatika. Ini adalah digital notebook saya untuk mata kuliah Komputasi Aljabar Linear.</p>
-<div class="toctree-wrapper compound">
+  <section class="tex2jax_ignore mathjax_ignore" id="eliminasi-gaussian">
+<h1>Eliminasi Gaussian<a class="headerlink" href="#eliminasi-gaussian" title="Link to this heading">#</a></h1>
+<section id="definisi-eliminasi-gaussian">
+<h2>Definisi Eliminasi Gaussian<a class="headerlink" href="#definisi-eliminasi-gaussian" title="Link to this heading">#</a></h2>
+<p>Eliminasi Gaussian adalah suatu prosedur atau algoritma sistematis yang digunakan untuk menyelesaikan sistem persamaan linear (SPL). Proses ini bekerja dengan cara menerima masukan berupa matriks augmentasi, lalu mereduksinya menjadi matriks baru yang ekuivalen baris dalam Bentuk Eselon Baris. Tujuan utama dari penyederhanaan ini adalah agar hubungan antarvariabel menjadi jauh lebih jelas, sehingga solusi dari sistem persamaan tersebut dapat ditemukan dengan mudah melalui metode substitusi balik.</p>
+</section>
+<section id="operasi-baris-elementer-obe">
+<h2>Operasi Baris Elementer (OBE)<a class="headerlink" href="#operasi-baris-elementer-obe" title="Link to this heading">#</a></h2>
+<p>Untuk mereduksi suatu matriks hingga mencapai bentuk eselon baris, kita menggunakan proses yang disebut reduksi baris. Dalam proses ini, ada 3 jenis operasi dasar yang legal dan aman digunakan tanpa mengubah nilai solusi asli dari sistem linear tersebut:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Perkalian Skalar: Mengalikan sebuah baris dengan bilangan tak-nol 
+$c \neq 0$ 
+(artinya, mengganti baris $r_i$ dengan 
+$c \cdot r_i$ 
+dengan cara mengalikan semua entri di baris tersebut dengan 
+$c$).V
+
+2. Pertukaran Baris: Menukar posisi dua baris sembarang di dalam matriks.
+
+3. Penjumlahan Baris: Menambahkan kelipatan satu baris ke baris yang lain (artinya, mengganti baris $r_i$ dengan $r_i + c \cdot r_j$ untuk suatu konstanta $c$).
+</pre></div>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -411,12 +436,21 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Sistem%20Persamaan%20Linear.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">SISTEM PERSAMAAN LINEAR</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="Persamaan%20Linear.html"
+       href="Tugas%20Awal.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">PERSAMAAN LINEAR</p>
+        <p class="prev-next-title">Tugas Awal</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -426,6 +460,24 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eliminasi-gaussian">Definisi Eliminasi Gaussian</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operasi-baris-elementer-obe">Operasi Baris Elementer (OBE)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
